@@ -1,7 +1,7 @@
 ﻿import tkinter as tk
 import requests
 
-#91da59a96a556a8656b81bde14b21775
+
 #api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
 HEIGHT=500
 WIDTH=600
@@ -18,7 +18,6 @@ def Format(pogoda):
     return string
 
 def pobierz_pogode(miasto):
-    klucz="91da59a96a556a8656b81bde14b21775"
     url="https://api.openweathermap.org/data/2.5/weather"
     params={"APPID":klucz, "q":miasto, "units":"metric", "lang":"pl"}
     response=requests.get(url, params=params)
