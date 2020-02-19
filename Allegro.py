@@ -3,8 +3,6 @@ from requests.auth import HTTPBasicAuth
 import time
 
 
-client_id=r"2edd67568a2a4e53969916d0519f5ed6"
-client_secret=r"gSw3H5rKRndPNLo0xjUnvX8cWxYqPqGF6Hwkn7DI8V3B7oA4JUfcRndM1HPoyqJT"
 auth=HTTPBasicAuth(client_id,client_secret)
 
 Token=""
