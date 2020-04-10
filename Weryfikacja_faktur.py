@@ -28,9 +28,9 @@ def Test_faktur(fak0,fak1,a,b):
 
 def User_Input(homedir):
     print("Jeżeli wpisujesz zakres danych rozdziel je przecinkiem nie używając spacji.")
-    magazyn=input("Numer magazynu: ").split(",")
-    rok=input("Rok: ").split(",")
-    miesiac=input("Miesiąc: ").split(",")
+    magazyn=input("Numer magazynu: ").replace("*","02,02W,04,05,06,07,07W").split(",")
+    rok=input("Rok: ").replace("*","2018,2019,2020").split(",")
+    miesiac=input("Miesiąc: ").replace("*","01,02,03,04,05,06,07,08,09,10,11,12").split(",")
     for mag_folder in magazyn:
         for rok_folder in rok:
             for mie_folder in miesiac:
